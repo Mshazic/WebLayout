@@ -28,3 +28,23 @@ body{
     grid-template-rows: auto 1fr auto;
     row-gap: 20px;
 }
+
+.baicContent-Left-nav{
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+   column-gap: 20px;
+
+}
+.baicContent-Left-nav .box-1{
+ grid-column: span 2;
+}
+.baicContent-Left-nav .box-2{
+    grid-column: span 6;
+}
+.baicContent-Left-nav .box-3{
+    grid-column: span 4;
+}
