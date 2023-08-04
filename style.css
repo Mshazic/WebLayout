@@ -48,6 +48,7 @@ body{
 .baicContent-Left-nav .box-3{
     grid-column: span 4;
 }
+
 /*****intermediate Level******/
 .Content-intermediate{
     height: 90%;
@@ -57,6 +58,67 @@ body{
     display: grid;
     gap: 10px;
 }
+
+
+/***Plus level***/
+.Content-pro{
+    height: 90%;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "h h h h  h h h h  h h h h"
+     "b b b b  m m m m  m m m m"
+     "b b b b  m m m m  m m m m"
+    "s s s s  m m m m  m m m m"
+     "s s s s f f f f  f f f f"
+    ;
+}
+.Content-pro .box-1{
+grid-area: h;
+}
+.Content-pro .box-2{
+grid-area: b;
+}
+.Content-pro .box-3{
+grid-area: m;
+}
+.Content-pro .box-4{
+grid-area: s;
+}
+.Content-pro .box-5{
+grid-area: f;
+}
+.card-img-top{
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cardwrapper {
+display: grid;
+grid-template-columns: repeat(auto-ft, minmax(350px, 1fr));
+gap: 20px;
+width: 90%;
+margin: 20px auto;
+}
+.card{
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+
+}
+.card-body{
+    background: darkblue;
+    width: 100%;
+    border-radius: 20%;
+    padding: 10%;
+    color: #fff;
+}
+
+/***end Plus level***/
 
 @media (min-width: 768px) {
     .Content-intermediate{
@@ -114,3 +176,75 @@ body{
     }
 }
 /***** End intermediate Level******/
+
+@media (min-width:768px) {
+    .Content-pro{
+        height: 90%;
+        width: 90%;
+        margin: 20px auto;
+    
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "h h h h  h h h h  h h h h"
+         "b b b b  m m m m  m m m m"
+         "b b b b  m m m m  m m m m"
+        "s s s s  m m m m  m m m m"
+         "s s s s f f f f  f f f f"
+        ;
+    }
+    .Content-pro .box-1{
+    grid-area: h;
+    }
+    .Content-pro .box-2{
+    grid-area: b;
+    }
+    .Content-pro .box-3{
+    grid-area: m;
+    }
+    .Content-pro .box-4{
+    grid-area: s;
+    }
+    .Content-pro .box-5{
+    grid-area: f;
+    }
+    
+    
+}
+
+@media (min-width: 1080px) {
+    .Content-pro{
+        height: 90%;
+        width: 90%;
+        margin: 20px auto;
+    
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "h h h h  h h h h  h h h h"
+         "b b m m  m m m m  m m s s"
+         "b b m m  m m m m  m m s s"
+         "b b m m  m m m m  m m s s"
+         "f f f f f f f f  f f s s"
+        ;
+    }
+    .Content-pro .box-1{
+    grid-area: h;
+    }
+    .Content-pro .box-2{
+    grid-area: b;
+    }
+    .Content-pro .box-3{
+    grid-area: m;
+    }
+    .Content-pro .box-4{
+    grid-area: s;
+    }
+    .Content-pro .box-5{
+    grid-area: f;
+    }
+    
+    
+}
